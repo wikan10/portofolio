@@ -2,11 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "../components/Projects/ProjectCard";
 import Particle from "../components/Particle";
-import pg from "../assets/projects/pg.png";
-import project from "../assets/projects/project.jpeg";
+import project1 from "../assets/projects/project1.png";
+import project2 from "../assets/projects/project2.png";
+import project3 from "../assets/projects/project3.png";
+import project4 from "../assets/projects/project4.png";
 import lift from "../assets/projects/lift.png";
-import krypto from "../assets/projects/krypto.png";
-import kickstart from "../assets/projects/kickstart.png";
 
 const Projects = () => {
   return (
@@ -22,45 +22,48 @@ const Projects = () => {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={lift}
+              imgPath={project1}
               isBlog={false}
-              title="Lift-Buddy"
-              description="This online ride-sharing platform boasts a responsive front-end design, complete with an admin panel built using React and Material-UI. With the integration of Google Maps API, users can easily access directions on the map. The platform allows for full CURD functionality on profiles and posts, and users can confirm or cancel a ride from a post and message each other after confirmation. Additionally, users can easily reset their password. The back-end is powered by a Node Express server and utilizes MongoDB for the database management."
-              ghLink="https://github.com/19sajib/lift-buddy"
+              title="JB Store"
+              description="JB Store is a mobile e-commerce application developed with Flutter. Its main features include login via Google, Facebook, or email, product search, product categories, discount promotions, and featured products. Users can fill in personal information, view product details, select payment methods, and complete transactions. The app provides an easy and convenient online shopping experience with API integration for communication with backend servers and payment services."
+              ghLink="https://github.com/gentaananda48/jb_store"
+              demoLink="https://drive.google.com/file/d/1j7x6hoy4TN3DTiWwKFNavIM3-4Hz3wow/view?usp=drive_link"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={project}
+              imgPath={project2}
               isBlog={false}
-              title="Social Media"
-              description="This platform features a responsive interface built with Reactjs and CSS, allowing users to easily manage their profiles and posts through CRUD activities. The option to follow other users and interact with their posts (like or dislike) is also available, with suggestions for new users to follow. Users can only view posts from their followed users and can only engage in chat with those they follow. The backend is powered by Nodejs and Expressjs server, while MongoDB is utilized as the database."
-              ghLink="https://github.com/19sajib/social-media"
+              title="Hi Kids"
+              description="HiKids is a mobile application developed with Android Studio using Java. This app is designed for children to learn and memorize Juz Amma, daily prayers, and stories of the Prophets and Messengers. Its main features include a list of Juz Amma surahs, a collection of daily prayers, and engaging stories of the Prophets. Additionally, the app offers daily quizzes to test children's knowledge and memorization, making the learning process more interactive and enjoyable."
+              ghLink="https://github.com/wikan10/HiKids"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={kickstart}
+              imgPath={project3}
               isBlog={false}
-              title="E‑Commerce Website"
-              description="This ecommerce website utilizes a REST API built with Nodejs and Expressjs, allowing for easy CRUD operations on user profiles, products and admin panel. The user interface is designed for efficient product management and includes a complete purchase process. The admin panel, accessible for CRUD on users and products, includes a chart for statistics display. Stripe API is integrated to handle customer payments. The website uses MongoDB and Firebase as the database."
-              ghLink="https://github.com/19sajib/mern-stack-ecommerce"
+              title="A Subagja Website"
+              description="A Subagja is an online store website that sells various types of furniture. The website has two main types of pages: a user page for ordering products and an admin page for managing website data. As part of a university course project, this website includes 360-degree images and several products that can be viewed in 3D. These 3D products allow users to change their textures, and this feature is developed using Three.js."
+              ghLink="https://github.com/wikan10/webasubagja/"
+              demoLink="https://drive.google.com/file/d/1p2jd2i4Ocbk7vGXd_KzNZs9S6bzVlxn9/view?usp=sharing"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={pg}
+              imgPath={project4}
               isBlog={false}
               title="Blog Website"
-              description="This blogging application features a RESTful API server built with Nodejs and Expressjs. The data is retrieved from the API server and displayed on a user-friendly interface designed using React, Redux, and styled-components for a seamless experience."
+              description="Central Kos is an innovative platform offering boarding house solutions with guaranteed quality and the lowest prices. With over 100 partners, Central Kos is ready to help you find the best boarding room that suits your needs. Explore a wide range of boarding house and shop options to conveniently meet your daily needs."
               ghLink="https://github.com/19sajib/mern-blog-app"
+              demoLink="https://centralkos.netlify.app/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={krypto}
               isBlog={false}
@@ -79,11 +82,11 @@ const Projects = () => {
               description="Solidity Kickstart is a Web 3 project that utilizes an Ethereum smart contract created using Solidity. It includes all the functionality of a kickstart platform, enabling users to interact with their Metamask wallet, transfer Ethereum and participate in kickstart campaigns."
               ghLink="https://github.com/19sajib/Solidity-Kickstart"
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

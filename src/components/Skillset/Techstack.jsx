@@ -1,19 +1,8 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiGit,
-} from "react-icons/di";
-import {
-  SiMaterialui,
-  SiGraphql,
-  SiSolidity,
-  SiRedux,
-  SiMongodb,
-  SiHtml5
-} from "react-icons/si";
+import { DiJavascript1, DiReact, DiGit, DiJava, DiPhp } from "react-icons/di";
+import { SiFirebase, SiMysql, SiHtml5, SiFlutter } from "react-icons/si";
+import { FaCss3Alt } from "react-icons/fa";
 
 const Techstack = () => {
   return (
@@ -22,34 +11,35 @@ const Techstack = () => {
         <SiHtml5 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <FaCss3Alt />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+        <DiJavascript1 />
       </Col>
+
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedux />
+        <SiMysql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMongodb />
+        <SiFlutter />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiGraphql />
+        <DiPhp />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+        <SiFirebase />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMaterialui />
+        <DiJava />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
       </Col>
     </Row>
   );
-}
+};
 
 export default Techstack;

@@ -2,9 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import LaptopImg from "../../assets/fotodiri.png";
 import Tilt from "react-parallax-tilt";
-import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
+import { FaInstagram } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -25,7 +25,7 @@ const About = () => {
               Indonesia, majoring in Computer Engineering.
               <br />
               <br />
-              As a <b className="yellow">Front-End</b> and{" "}
+              As a <b className="yellow">Front-End Web Developer</b> and{" "}
               <b className="yellow">Mobile Developer</b>, I enjoy tackling new
               challenges and continuously expanding my skillset.
               <br />
@@ -78,7 +78,7 @@ const About = () => {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/19sajib"
+                  href="https://github.com/wikan10/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -87,20 +87,10 @@ const About = () => {
                   <AiFillGithub />
                 </a>
               </li>
+
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/19sajib"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                  aria-label="twitter"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/19sajib/"
+                  href="https://www.linkedin.com/in/wikangandangpalgunadi/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -111,13 +101,13 @@ const About = () => {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://leetcode.com/19sajib/"
+                  href="https://www.instagram.com/wikan_gp/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                   aria-label="instagram"
                 >
-                  <SiLeetcode />
+                  <FaInstagram />
                 </a>
               </li>
             </ul>
